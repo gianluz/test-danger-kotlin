@@ -6,6 +6,6 @@ matrix:
       install:
         - brew install danger/tap/danger-kotlin 
       script:
-        - cd ~/.m2
+        - cd /java_cache/.m2
         - ls -la
         #- danger-kotlin ci
