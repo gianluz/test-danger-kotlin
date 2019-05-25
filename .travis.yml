@@ -4,8 +4,9 @@ matrix:
     - os: osx
       osx_image: xcode10
       install:
+        - mkdir ~/.m2
         - brew install danger/tap/danger-kotlin 
       script:
-        - cd /java_cache/.m2
+        - cd ~/.m2
         - ls -la
         #- danger-kotlin ci
