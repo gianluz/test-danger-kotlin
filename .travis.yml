@@ -3,6 +3,12 @@ matrix:
   include:
     - os: osx
       osx_image: xcode10
+      android:
+        components:
+          - tools
+          - platform-tools
+          - build-tools-26.0.0
+          - android-28
       install:
         - mkdir ~/.m2
         - brew install danger/tap/danger-kotlin 
