@@ -12,6 +12,7 @@ matrix:
       dist: trusty
       install:
         - npm install -g danger
+        - sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
         - brew install danger/tap/danger-kotlin 
       script:
         - danger-kotlin ci
