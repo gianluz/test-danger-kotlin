@@ -1,4 +1,4 @@
-language: android
+language: java
 matrix:
   include:
     - os: osx
@@ -10,13 +10,6 @@ matrix:
     - os: linux
       sudo: required
       dist: trusty
-      install:
-      android:
-        components:
-          - tools
-          - platform-tools
-          - build-tools-26.0.0
-          - android-28
       install:
         - npm install -g danger
         - brew install danger/tap/danger-kotlin 
