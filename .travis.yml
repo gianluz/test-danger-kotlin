@@ -3,6 +3,14 @@ matrix:
   include:
     - os: osx
       osx_image: xcode10
+      install:
+        - brew install danger/tap/danger-kotlin 
+      script:
+        - danger-kotlin ci
+    - os: linux
+      sudo: required
+      dist: trusty
+      install:
       android:
         components:
           - tools
@@ -10,7 +18,7 @@ matrix:
           - build-tools-26.0.0
           - android-28
       install:
-        - mkdir ~/.m2
+        - npm install -g danger
         - brew install danger/tap/danger-kotlin 
       script:
         - danger-kotlin ci
