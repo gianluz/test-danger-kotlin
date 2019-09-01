@@ -8,7 +8,6 @@ matrix:
       script:
         - danger-kotlin ci
     - os: linux
-      sudo: required
       dist: trusty
       install:
         - npm install -g danger
