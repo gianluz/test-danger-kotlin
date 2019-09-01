@@ -14,4 +14,3 @@ matrix:
         - brew install danger/tap/danger-kotlin
       script:
         - danger-kotlin ci
-
