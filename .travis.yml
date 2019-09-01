@@ -8,12 +8,7 @@ matrix:
       script:
         - danger-kotlin ci
     - os: linux
-      sudo: required
       dist: trusty
-      addons:
-        apt:
-          packages:
-            - linuxbrew-wrapper
       install:
         - npm install -g danger
         - brew install danger/tap/danger-kotlin
