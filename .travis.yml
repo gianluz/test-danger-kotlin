@@ -11,6 +11,6 @@ matrix:
       dist: trusty
       install:
         - npm install -g danger
-        - bash <(curl -s https://raw.githubusercontent.com/danger/kotlin/e6b5bb0ff68825d2239ff7c79424b09a404fc966/scripts/install.sh)
+        - bash <(curl -s https://raw.githubusercontent.com/danger/kotlin/install-script/scripts/install.sh)
       script:
         - danger-kotlin ci
