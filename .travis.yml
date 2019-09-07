@@ -15,5 +15,6 @@ matrix:
         - source ~/.bash_profile
         - sdk install gradle
         - bash <(curl -s https://raw.githubusercontent.com/danger/kotlin/install-script/scripts/install.sh)
+        - /opt/kotlin/kotlinc/bin/kotlinc -version
       script:
         - danger-kotlin ci
