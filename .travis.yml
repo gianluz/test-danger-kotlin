@@ -11,6 +11,10 @@ matrix:
       dist: trusty
       install:
         - npm install -g danger
-        - brew install danger/tap/danger-kotlin
+        - curl -s "https://get.sdkman.io" | bash
+        - source ~/.bash_profile
+        - sdk install gradle
+        - sdk install kotlin
+        - bash <(curl -s https://raw.githubusercontent.com/danger/kotlin/a8a066473a4d84ebc46e99bd163194d30313a530/scripts/install.sh)
       script:
         - danger-kotlin ci
