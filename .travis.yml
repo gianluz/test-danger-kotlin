@@ -11,6 +11,11 @@ matrix:
       dist: trusty
       install:
         - npm install -g danger
+        - curl -o gradle.zip -L https://downloads.gradle-dn.com/distributions/gradle-5.6.2-bin.zip
+        - mkdir /opt/gradle
+        - unzip -d /opt/gradle gradle.zip
+        - export PATH=$PATH:/opt/gradle/gradle-5.6.2/bin
+        - rm -rf gradle.zip
         - bash <(curl -s https://raw.githubusercontent.com/danger/kotlin/install-script/scripts/install.sh)
       script:
         - danger-kotlin ci
