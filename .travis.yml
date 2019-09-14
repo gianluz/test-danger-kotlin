@@ -23,6 +23,7 @@ android:
     - extra-android-m2repository
     - addon-google_apis-google-$ANDROID_API_LEVEL
 before_install:
+  - cat /etc/passwd
   - sudo apt-get update
   - curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
   - sudo apt-get install nodejs
