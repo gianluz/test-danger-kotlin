@@ -22,6 +22,10 @@ android:
     - extra-google-m2repository
     - extra-android-m2repository
     - addon-google_apis-google-$ANDROID_API_LEVEL
+before_install:
+  - sudo apt-get update
+  - curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+  - sudo apt-get install nodejs
 install:
   - npm install -g danger
   - curl -s "https://get.sdkman.io" | bash
