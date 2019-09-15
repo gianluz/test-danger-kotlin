@@ -22,6 +22,7 @@ android:
     - extra-google-google_play_services
     - extra-google-m2repository
     - extra-android-m2repository
+    - extra-android-support
     - addon-google_apis-google-$ANDROID_API_LEVEL
 before_install:
   - sudo apt-get update
