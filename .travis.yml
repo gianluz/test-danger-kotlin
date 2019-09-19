@@ -36,8 +36,7 @@ install:
   - echo yes | sdkmanager "extras;android;m2repository"
   - echo yes | sdkmanager "extras;google;m2repository"
   - echo yes | sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2"
-  - echo yes | sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2"
-  - echo yes | sdkmanager "$EMULATOR" # Install emulator system image
+  - echo yes | sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2"  - echo yes | sdkmanager "$EMULATOR" # Install emulator system image
   - sudo npm install -g danger
   - curl -s "https://get.sdkman.io" | bash
   - source ~/.bash_profile
