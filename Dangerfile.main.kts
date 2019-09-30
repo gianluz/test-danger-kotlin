@@ -1,7 +1,7 @@
 #!/usr/bin/env kscript
 
 //@file:DependsOn("com.danger:danger-kotlin-library:0.1.0")
-@file:DependsOn("./plugins/danger-kotlin-android-lint-plugin-0.0.1-SNAPSHOT.jar")
+@file:DependsOn("plugins/danger-kotlin-android-lint-plugin-0.0.1-SNAPSHOT.jar")
 
 import com.danger.dangerkotlin.*
 import com.gianluz.danger.kotlin.android.lint.*
