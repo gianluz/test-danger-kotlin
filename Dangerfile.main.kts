@@ -23,4 +23,4 @@ if (danger.github!!.pullRequest.title.contains("WIP" ,false)) {
 }
 
 val dangerLint = DangerLint()
-dangerLint.report("app/build/reports/lint-results.xml")
+dangerLint.report("./app/build/reports/lint-results.xml")
