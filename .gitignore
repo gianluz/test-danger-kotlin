@@ -25,6 +25,10 @@ hs_err_pid*
 .idea/*
 build
 .gradle/
+app/app.iml
 
 # Danger
 danger_out.json
+
+# Gradle
+local.properties
