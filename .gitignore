@@ -32,3 +32,6 @@ danger_out.json
 
 # Gradle
 local.properties
+
+# Local
+app/test-danger-kotlin-app.iml

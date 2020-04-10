@@ -37,10 +37,6 @@ install:
   - echo yes | sdkmanager "extras;google;m2repository"
   - echo yes | sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2"
   - echo yes | sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2"
-  - sudo npm install -g danger
-  - curl -s "https://get.sdkman.io" | bash
-  - source ~/.bash_profile
-  - sdk install gradle
   - bash <(curl -s https://raw.githubusercontent.com/danger/kotlin/master/scripts/install.sh)
   - source ~/.bash_profile
 script:
