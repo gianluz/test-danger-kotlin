@@ -29,6 +29,9 @@ before_install:
   - sudo apt-get update
   - curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
   - sudo apt-get install nodejs
+  - curl -s "https://get.sdkman.io" | bash
+  - source "$HOME/.sdkman/bin/sdkman-init.sh"
+  - sdk install gradle
 install:
   # Update sdk tools to latest version and install/update components
   - echo yes | sdkmanager "tools"
