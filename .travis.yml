@@ -38,6 +38,7 @@ install:
   - echo yes | sdkmanager "extras;google;m2repository"
   - echo yes | sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2"
   - echo yes | sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2"
+  - gradle --version
   - bash <(curl -s https://raw.githubusercontent.com/danger/kotlin/intellij-compat/scripts/install.sh)
   - source ~/.bash_profile
 script:
