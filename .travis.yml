@@ -1,6 +1,7 @@
 language: android
+dist: bionic
 sudo: required
-jdk: oraclejdk8
+jdk: openjdk12
 env:
   global:
     - ANDROID_API_LEVEL=28
