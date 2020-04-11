@@ -45,5 +45,5 @@ install:
   - bash <(curl -s https://raw.githubusercontent.com/danger/kotlin/intellij-compat/scripts/install.sh)
   - source ~/.bash_profile
 script:
-  - ./gradlew build check
+  - ./gradlew app:lintDebug
   - danger-kotlin ci
