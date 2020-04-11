@@ -9,7 +9,7 @@ register plugin AndroidLint
 
 danger(args) {
 
-    warn("args $args")
+    warn("Bitrise test : args $args")
 
     val allSourceFiles = git.modifiedFiles + git.createdFiles
 
