@@ -24,5 +24,7 @@ danger(args) {
         warn("PR is classed as Work in Progress")
     }
 
-    AndroidLint.report("app/build/reports/lint-results.xml")
+    AndroidLint.scan("app").forEach {
+        AndroidLint.report(it)
+    }
 }
