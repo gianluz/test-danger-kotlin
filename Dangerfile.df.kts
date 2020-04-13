@@ -9,12 +9,9 @@ register plugin AndroidLint
 
 danger(args) {
 
-    warn("Bitrise test : args $args")
+    warn("Bitrise test : args [${args.forEach { " $it" }}]")
 
     val allSourceFiles = git.modifiedFiles + git.createdFiles
-
-    val sourceChanges = allSourceFiles.firstOrNull { it.contains("src") }
-    val isTrivial = github.pullRequest.title.contains("#trivial")
 
     if (git.createdFiles.size + git.modifiedFiles.size - git.deletedFiles.size > 10) {
         warn("Big PR, try to keep changes smaller if you can")
@@ -24,7 +21,5 @@ danger(args) {
         warn("PR is classed as Work in Progress")
     }
 
-    AndroidLint.scan("app").forEach {
-        AndroidLint.report(it)
-    }
+    AndroidLint.report("./app/build/reports/lint-results-debug.xml")
 }
