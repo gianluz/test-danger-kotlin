@@ -9,7 +9,10 @@ register plugin AndroidLint
 
 danger(args) {
 
-    warn("Bitrise test : args [${args.forEach { " $it" }}]")
+    val argsString = buildString {
+        args.forEach { append(it).append(" ") }
+    }
+    warn("Bitrise test : args [$argsString]")
 
     val allSourceFiles = git.modifiedFiles + git.createdFiles
 
